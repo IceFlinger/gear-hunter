@@ -1,0 +1,56 @@
+A tool for alerting when desired gear appears on the Splatnet App store.
+Requires an iksm token (same one as used for squidtracks), which can be retrieved by following eli's instructions at https://github.com/frozenpandaman/splatnet2statink/wiki/mitmproxy-instructions
+If a discord token and user ID are provided, it will sent a DM to the user ID from the token's bot account if any gear is found. This script can be put into a crontab file to run every hour and send you a DM when any desired gear 
+appears.
+
+The list of wanted gear needs to be formatted correctly
+
+wanted_sets = [["slot", "Main Ability", "Brand"],
+	["slot", "Main Ability", "Brand"]
+	]
+
+slot options = "head", "clothes", or "shoes"
+
+Main ability options = 
+"Run Speed Up"
+"Swim Speed Up"
+"Special Charge Up"
+"Special Saver"
+"Special Power Up"
+"Ink Resistance Up"
+"Bomb Defense Up"
+"Cold-Blooded"
+"Sub Power Up"
+"Ink Saver (Main)"
+"Ink Saver (Sub)"
+"Ink Recovery Up"
+"Quick Super Jump"
+"Quick Respawn"
+"Opening Gambit"
+"Tenacity"
+"Comeback"
+"Ninja Squid"
+"Haunt"
+"Thermal Ink"
+"Respawn Punisher"
+"Stealth Jump"
+"Object Shredder"
+"Drop Roller"
+"Last-Ditch Effort"
+
+Brand options = 
+"Rockenberg"
+"Krak-on"
+"Takoroka"
+"Zekko"
+"Forge"
+"SquidForce"
+"Inkline"
+"Toni Kensa"
+"Annaki"
+"Krak-on"
+"Splash Mob"
+"Firefin"
+"Tentatek"
+"Zink"
+"Skalop"
